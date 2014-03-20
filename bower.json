@@ -1,0 +1,31 @@
+{
+  "name": "Coach Tracker",
+  "distPath": "app/dist",
+  "appPath": "app",
+  "version": "0.0.0",
+  "authors": [
+    "Aaron Hickman <311chaos@gmail.com>"
+  ],
+  "description": "Track Player minutes",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3.0-build.2484+sha.2f61b2f",
+    "font-awesome": "~4.0.3",
+    "angular-animate": "1.3.0-build.2484+sha.2f61b2f",
+    "bootstrap": "~3.1.0",
+    "angular-timer": "~1.0.11",
+    "firebase": "~1.0.8",
+    "firebase-simple-login": "~1.3.0",
+    "angularfire": "~0.7.0",
+    "angular-route": "1.3.0-build.2484+sha.2f61b2f"
+  }
+}
