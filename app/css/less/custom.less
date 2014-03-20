@@ -1,0 +1,77 @@
+//Define custom colors here.
+@white:     #fff;
+@bower:     #FFCC2F;
+@grunt:     #e48632;
+@yeoman:    #EF5734;
+@angular:   #B72733;
+@facebook:  #3B5998;
+@twitter:   #32C1F0;
+@linkedin:  #62B3DB;
+@google:    #d34836;
+@github:    #405a6a;
+@mail:      #F8DD96;
+
+
+.fa-login{
+  background-color: @facebook;
+  color:white;
+  width: 100px;
+}
+.fa-login:hover { background-color: lighten(@facebook, 8%); color: white; }
+
+.fa-login span { padding-left: 5px; }
+
+.brand-login { background: url('../img/court.jpg') no-repeat; }
+.brand {
+  background: url('../img/court.jpg') no-repeat;
+  display: block;
+  position: relative;
+  height: 125px;
+  background-size: 100%;
+  background-position: 0 -10px;
+}
+
+.brand .mainControls {
+  position: absolute;
+  bottom: 5px;
+  left:5px;
+}
+
+@media (min-width: 600px) {
+  .brand {
+    background-position: 0 -50px;
+  }
+}
+@media (min-width: @screen-sm-min) {
+  .brand {
+    background-position: 0 -75px;
+  }
+}
+@media (min-width: @screen-md-min) {
+  .brand {
+    height: 150px;
+    background-position: 0 -140px;
+  }
+}
+@media (min-width: @screen-lg-min) {
+  .brand {
+    height: 200px;
+    background-position: 0 -150px;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.deleteImage {
+  display: none;
+}
+
+.playerImage:hover>.deleteImage {
+  display: block;
+  position: absolute;
+  bottom:20px;
+  right:0px;
+}
+

@@ -1,0 +1,68 @@
+<div class="container" style="padding: 5px;" xmlns="http://www.w3.org/1999/html">
+    <div class="brand">
+        <div class="mainControls">
+            <button class="btn btn-default" ng-click="refreshAll()">
+                <i class="fa fa-refresh"></i>
+            </button>
+            <button class="btn btn-default" ng-click="playPauseAll()">
+                <i class="fa fa-play" data-ng-hide="timerRunning"></i>
+                <i class="fa fa-pause" data-ng-show="timerRunning"></i>
+            </button>
+        </div>
+          <img ng-src="http://graph.facebook.com/530949564/picture?type=square">
+    </div>
+</div>
+
+<div data-ng-controller="Players">
+    <div class="container">
+        <!--Angular-->
+        <div class="row">
+            <div data-ng-repeat="player in players | orderBy:'-playTime'" class="player">
+                <div>
+                    <div class="profile">
+                        <div image-changer ng-model=player></div>
+                    </div>
+
+                    <div class="timer">
+                        <div data-ct-timer-button ng-model="player"></div>
+                    </div>
+                    <div class="modifyTime">
+                        <button class="btn btn-default plus">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                        <button class="btn btn-default minus">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 5px 0 10px 105px; position: relative;">
+                <button class="btn btn-default" data-ng-hide="addingPlayer" data-ng-click="showAddPlayer()" style="height: 40px; margin-left: 24px; width: 155px;">
+                    Add a Player
+                    <i class="fa fa-user"></i>
+                </button>
+
+                <div data-ng-show="addingPlayer" style="background-color: white; z-index: 10; width: 100%;" class="center-block animate-hide">
+                    <div style="padding: 0 5px 5px 5px;">
+                        <input type="text" style="font-size: 16px;" ng-model="newPlayerName" placeholder="Name">
+                    </div>
+                    <div style="padding: 0 5px 5px 5px;">
+                        <input type="text" style="font-size: 16px;" ng-model="newPlayerNumber" placeholder="Number">
+                    </div>
+                    <div style="margin-left: 55px;">
+                        <button class="btn btn-link" data-ng-click="closeAddPlayer()">Close</button>
+                        <button class="btn btn-default" data-ng-click="addPlayer()">Add</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+</div>
+

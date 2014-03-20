@@ -1,0 +1,55 @@
+
+.player .profile { display: inline-block;}
+.player img.profile { width: 70px; height: 70px; }
+.player { border-bottom: 1px solid #eee; }
+.player .timer { display: inline-block; vertical-align: top;}
+.player .timer .btn { margin-left: 15px; margin-top: 5px; width:100px; }
+.player .modifyTime { display: inline-block; vertical-align: top; margin-top: 5px;}
+.player .modifyTime button { display: block; margin: 2px 0; }
+.player .modifyTime button.plus:active { background-color: #47a447; }
+.player .modifyTime button.minus:active { background-color: #d9534f; }
+.player .modifyTime button.btn { width: 50px; }
+
+.playerName {
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.playerNumber {
+  font-size: 28px;
+  font-family: "Impact", Charcoal, sans-serif;
+  text-align: center;
+  text-shadow: 3px 2px 1px rgba(0,0,0,0.16);
+}
+
+.animate-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+  line-height:20px;
+  opacity:1;
+  padding:10px;
+}
+
+.animate-hide.ng-hide-add,
+.animate-hide.ng-hide-remove {
+  display:block!important;
+}
+
+.animate-hide.ng-hide {
+  line-height:0;
+  opacity:0;
+  padding:0 10px;
+}
+
+.check-element {
+  padding:10px;
+  border:1px solid black;
+  background:white;
+}
+
+
+

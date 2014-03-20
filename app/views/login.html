@@ -1,0 +1,34 @@
+<!--<div class="container" style="padding: 5px;">-->
+    <!--<div class="brand" style="height: 400px;">-->
+        <!--<div class="">-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="container" data-ng-controller="login">
+
+    <div  class="text-center center-block" style="margin-top:40px; width:280px; height: 430px; background: url('../img/clipboard.png') no-repeat; background-size:320px; background-position:-18px -9px;">
+        <div class="h2" style="padding-top: 168px; margin-bottom: 70px;">Coach Tracker</div>
+        <button class="btn btn-default fa-login" ng-click="fbLogin()" data-ng-hide="login.auth.user">
+            <i class="fa fa-facebook">
+                <span>Login</span>
+            </i>
+        </button>
+        <button class="btn btn-default fa-login" ng-click="fbLogout()" data-ng-show="login.auth.user">
+            <i class="fa fa-facebook">
+                <span>Logout</span>
+            </i>
+        </button>
+
+        <div data-ng-show="login.auth.user">
+            <!--Hello {{ login.auth.user.displayName }}-->
+            <div>
+                <button class="btn btn-default">View Profile</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
